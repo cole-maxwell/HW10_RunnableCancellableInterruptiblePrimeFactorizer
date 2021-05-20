@@ -7,7 +7,7 @@
   in a shell. 
 -->
 
-<project name="RunnableCancellablePrimeFactorizer" basedir="."  default="clean">
+<project name="RunnableCancellableInterruptiblePrimeFactorizer" basedir="."  default="clean">
 
 	<property environment="env"/>
     <property name="src" location="src" />
@@ -29,7 +29,7 @@
 	</target>
 
 	<target name="run" depends="compile">
-		<java 	classname="cs681.RunnableCancellablePrimeFactorizer"
+		<java 	classname="cs681.RunnableCancellableInterruptiblePrimeFactorizer"
 				classpathref="classpath"  
 				fork="true"/>
 	</target>
